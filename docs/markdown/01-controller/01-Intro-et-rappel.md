@@ -1,9 +1,9 @@
-# Objectif de la matinée ?
+# Objectif ?
 
-* Comprendre le rôle et le fonctionnement des contrôleurs dans ASP.NET MVC
-* Maîtriser l'écriture des actions et leur configuration
+* Rappel C#
+* Conception modèle controller et vue
 * Savoir utiliser le routing et les filtres
-* Appliquer les bonnes pratiques de développement
+* Quelques bonne pratiquedocke r
 
 <!-- .element: class="list-fragment" -->
 
