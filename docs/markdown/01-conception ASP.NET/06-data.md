@@ -72,3 +72,23 @@ public class UserSummary
     public bool IsAdult() => Age >= 18;
 }
 ```
+
+# Les entités de persistance : bonnes pratiques
+- Sans logique métier
+- Clés & index
+- Relations nettes & FK explicites
+- Alignées sur le schéma DB
+- Noms clairs et stables
+
+```cs
+public class OrderEntity
+{
+    public int Id { get; set; }
+    public DateTimeOffset CreatedAt { get; set; }
+    public DateTimeOffset UpdatedAt { get; set; }
+
+    //  FK 
+    public int UserId { get; set; }                 // <-- FK
+    public UserEntity User { get; set; } = default!; // navigation
+}
+```
