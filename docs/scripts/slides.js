@@ -31,16 +31,16 @@ function csharp() {
   ];
 }
 
-function controllerSlides() {
+function conceptionSlides() {
   return [
-    '01-controller/00-TITLE.md',
-    '01-controller/01-Intro-et-rappel.md',
-    '01-controller/02-anatomie-controller.md',
-    '01-controller/03-routes.md',
-    '01-controller/04-filtres.md',
-    '01-controller/05-transition.md',
-    '01-controller/06-questions.md',
-    '01-controller/07-Q&A.md',
+    '01-conception ASP.NET/00-TITLE.md',
+    '01-conception ASP.NET/01-Intro-et-rappel.md',
+    '01-conception ASP.NET/02-anatomie-controller.md',
+    '01-conception ASP.NET/03-routes.md',
+    '01-conception ASP.NET/04-filtres.md',
+    '01-conception ASP.NET/05-transition.md',
+    '01-conception ASP.NET/06-questions.md',
+    '01-conception ASP.NET/07-Q&A.md',
   ];
 }
 
@@ -70,7 +70,7 @@ function formation() {
     ...schoolSlides(), //
     ...history(), //
     ...csharp(), //
-    ...controllerSlides(), //
+    ...conceptionSlides(), //
     ...viewslides(), //
     ...modelSlides(), //
   ].map((slidePath) => {
