@@ -35,11 +35,11 @@ function conceptionSlides() {
   return [
     '01-conception ASP.NET/00-TITLE.md',
     '01-conception ASP.NET/01-Intro-et-rappel.md',
-    '01-conception ASP.NET/02-anatomie-controller.md',
-    '01-conception ASP.NET/03-routes.md',
-    '01-conception ASP.NET/04-filtres.md',
-    '01-conception ASP.NET/05-transition.md',
-    '01-conception ASP.NET/06-questions.md',
+    '01-conception ASP.NET/02-presentation.md',
+    '01-conception ASP.NET/03-controller.md',
+    '01-conception ASP.NET/04-routes.md',
+    '01-conception ASP.NET/05-service.md',
+    '01-conception ASP.NET/06-data.md',
     '01-conception ASP.NET/07-Q&A.md',
   ];
 }

@@ -1,4 +1,19 @@
-## Le controller
+<!-- .slide: class="transition bg-pink" -->
+
+# La couche web / API
+
+##==##
+
+## La couche web / API
+
+- Sert d’interface de communication entre la couche Présentation (UI) et la logique métier
+- Centralise la gestion des requêtes HTTP
+- Expose des endpoints via des controller, gère le routing, l'authentification et les authorisations
+- Classes principals : les controllers
+
+##==##
+
+# Les controllers
 
 ``` cs
 public class ProductsController : Controller

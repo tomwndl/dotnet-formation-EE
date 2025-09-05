@@ -5,7 +5,7 @@
 
 ##==##
 
-le routing est gérer via un middleware
+le routing est géré via un middleware
 
 - Mapper les URLs aux actions des contrôleurs
 - Gérer les paramètres dans les URLs
@@ -70,8 +70,6 @@ public class ProductController : Controller
 - Ajouter une methode UsersByAge(int age)
 - Renvoyer la liste des utilisateurs dont l’âge correspond à l’âge passé en paramètre
 - Configurer l’attribute routing pour exposer l’action sous l’URL /home/users/{age}.
-
-
 
 ##==##
 
