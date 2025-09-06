@@ -23,16 +23,15 @@ Dans les **années 90**, Microsoft utilise et propose:
 
 # Timeline
 
-[https://time.graphics/line/**593132**](https://time.graphics/line/593132)
+[https://time.graphics/line/**593132**](https://time.graphics/line/291016)
 
-
-![Timeline usage](../../assets/10-history/timeline_usage.png)
+![Dotnet Frameworks](../../assets/10-history/timeline_dotnets.png)
 
 ##==##
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 1.0
+## .Net Framework 1.0 (2002)
 
 - C# 
 - Sites web avec **ASP.NET**
@@ -48,13 +47,15 @@ Dans les **années 90**, Microsoft utilise et propose:
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 2.0
+## .Net Framework 2.0 (2005)
 
 - **Micro dotnet** première initiative pour des objets connectés <small>(lié au projet SPOT = Smart Personal Object Technology)</small>
-- Ajout des **Generics**
+- Ajout des **Generics**. Permet de prendre en paramètre un type sur lequel les méthodes et propriétés de la classe vont s’appliquer.
 ```csharp
 class List<T> where T : object
 {
+    Add(T item);
+    Remove(T item);
     //...
 }
 ```
@@ -68,7 +69,7 @@ class List<T> where T : object
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 3.0
+## .Net Framework 3.0 (2006)
 
 - **WinForms**, pour des applications “lourdes/desktop”
 - **WCF**, messages `SOAP` ancêtre des services web
@@ -83,16 +84,18 @@ class List<T> where T : object
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 3.5
+## .Net Framework 3.5 (2007)
 
 - **LINQ** ajoute de nombreuses méthodes et nécessite que les collections (xml, sql) soient dans des objets
 ```csharp
+// Query syntax
 var query = from e in experts
             where e.City == "Strasbourg"
             select e;
 ```
 ou
 ```csharp
+// Extension methods
 var query = experts.Where(e => e.City == "Strasbourg");
 ```
 - **Entity Framework**, permet de faire le mapping entre sql et objet. On parle d’ORM (objet-relationnal-mapping)
@@ -106,7 +109,7 @@ var query = experts.Where(e => e.City == "Strasbourg");
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 3.5 SP1
+## .Net Framework 3.5 SP1 (2008)
 
 - ASP.NET **MVC**
 
@@ -118,7 +121,7 @@ var query = experts.Where(e => e.City == "Strasbourg");
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 4.0
+## .Net Framework 4.0 (2010)
 
 - **TPL** (=Task Parallel Library)
   - Parallel LINQ
@@ -147,10 +150,10 @@ lock (this)
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 4.5
+## .Net Framework 4.5 (2012)
 
 - Support pour les interfaces tactiles (UWP)
-- **async/await** tasks
+- **async/await** tasks pour de la programmation asynchrone et non bloquante
 ``` csharp
 public async Task<List<Expert>> GetExperts()
 {
@@ -167,7 +170,7 @@ public async Task<List<Expert>> GetExperts()
 
 <!-- .slide: class="two-column" -->
 
-## .Net Framework 4.6.1
+## .Net Framework 4.6.2 (2016)
 
 - Apparition de **dotnet core**
 
@@ -179,6 +182,6 @@ public async Task<List<Expert>> GetExperts()
 
 # .NET Framework : Details
 
-
+Pour plus de détails sur les versions et leurs dépendances:
 [https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/**versions-and-dependencies**](https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies)
 
