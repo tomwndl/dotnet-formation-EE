@@ -33,36 +33,34 @@ function csharp() {
 
 function conceptionSlides() {
   return [
-    '01-conception ASP.NET/00-TITLE.md',
-    '01-conception ASP.NET/01-Intro-et-rappel.md',
-    '01-conception ASP.NET/02-presentation.md',
-    '01-conception ASP.NET/03-controller.md',
-    '01-conception ASP.NET/04-routes.md',
-    '01-conception ASP.NET/05-service.md',
-    '01-conception ASP.NET/06-data.md',
-    '01-conception ASP.NET/07-Q&A.md',
+    '02-conception ASP.NET/00-TITLE.md',
+    '02-conception ASP.NET/01-Intro-et-rappel.md',
+    '02-conception ASP.NET/02-presentation.md',
+    '02-conception ASP.NET/03-controller.md',
+    '02-conception ASP.NET/04-routes.md',
+    '02-conception ASP.NET/05-service.md',
+    '02-conception ASP.NET/06-data.md',
   ];
 }
 
-function viewslides() {
+function apiSlides() {
   return [
-    '02-view/00-TITLE.md',
-    '02-view/01-intro.md',
-    '02-view/02-layouts-et-style.md',
-    '02-view/03-communication-controller.md',
-    '02-view/04-Helper.md',
-    '02-view/06-Q&A.md',
-  ];
-}
-function modelSlides() {
-  return [
-    '03-Model/00-TITLE.md',
-    '03-Model/01-model-vs-dto.md',
-    '03-Model/02-mapping.md',
-    '03-Model/06-Q&A.md'
+    '03-api/00-TITLE.md',
+    '03-api/01-intro.md',
+    '03-api/02-REST.md',
+    '03-api/03-bonnes-pratiques.md',
+    '03-api/04-api-net.md',
+    '03-api/05-consommer-api.md',
   ];
 }
 
+function securiteSlides() {
+  return [
+    '04-Model/00-TITLE.md',
+    '04-Model/01-rappels.md',
+    '04-Model/02-TP.md',
+  ];
+}
 
 function formation() {
   return [
@@ -71,8 +69,8 @@ function formation() {
     ...history(), //
     ...csharp(), //
     ...conceptionSlides(), //
-    ...viewslides(), //
-    ...modelSlides(), //
+    ...apiSlides(), //
+    ...securiteSlides(), //
   ].map((slidePath) => {
     return { path: slidePath };
   });

@@ -74,6 +74,7 @@ public class UserSummary
 ```
 
 # Les entités de persistance : bonnes pratiques
+
 - Sans logique métier
 - Clés & index
 - Relations nettes & FK explicites

@@ -1,3 +1,3 @@
 <!-- .slide: class="transition bg-pink" -->
 
-# Développement des vues 
+# Gestion de la sécurité
