@@ -56,9 +56,10 @@ function apiSlides() {
 
 function securiteSlides() {
   return [
-    '04-Model/00-TITLE.md',
-    '04-Model/01-rappels.md',
-    '04-Model/02-TP.md',
+    '04-securite/00-TITLE.md',
+    '04-securite/01-rappels.md',
+    '04-securite/02-authent.md',
+    '04-securite/03-TP.md',
   ];
 }
 

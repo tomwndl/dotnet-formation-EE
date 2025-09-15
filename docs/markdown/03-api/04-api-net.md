@@ -26,8 +26,8 @@
 
 # Le controller d'api
 
-- classe qui traite les requêtes HTTP
-- point d’entrée entre le client (ex : une app web ou mobile) et le back-end
+- Classe qui traite les requêtes HTTP
+- Point d’entrée entre le client (ex : une app web ou mobile) et le back-end
 - Hérite généralement de la classe ControllerBase
 
 ##==##
@@ -43,33 +43,75 @@
 | `[HttpPut]`           | Spécifie que l’action répond aux requêtes HTTP PUT                          |
 | `[HttpDelete]`        | Spécifie que l’action répond aux requêtes HTTP DELETE                       |
 | `[FromBody]`          | Indique que la donnée provient du corps de la requête HTTP                  |
-| `[FromQuery]`         | Indique que la donnée provient de la query string                           |
-| `[FromRoute]`         | Indique que la donnée provient des paramètres de route                      |
+| `[FromQuery]`         | Indique que la donnée provient de la query string (ex : api/users/GetByAge?age=42)                      |
+| `[FromRoute]`         | Indique que la donnée provient des paramètres de route (ex : api/users/42)                     |
 | `[FromForm]`          | Indique que la donnée provient d’un formulaire envoyé en POST               |
 
 
 ##==##
 
-# Validation automatique des modèles
+# Validation des modèles
+
+Mécanisme puissant qui permet de s’assurer qu’un objet reçu par le controller respecte certaines règles.
+ 
+- Data Annotations
+- FluentValidation
+
+Avec ```[ApiController]``` (activé par défaut en ASP.NET Core), la validation est automatique.
+Si le modèle est invalide, ASP.NET renvoie une 400 Bad Request.
+
+- <!-- .element: class="list-fragment" -->
+
+##==##
+
+# Validation des modèles : Data annotation
 
 ``` cs
 public class UserDto
 {
-    [Required]
+    [Required(ErrorMessage = "Le nom est obligatoire")]
+    [StringLength(50, ErrorMessage = "Le nom ne doit pas dépasser 50 caractères")]
     public string Name { get; set; }
-}
 
-[ApiController]
-public class Controller : ControllerBase
+    [Range(0, 120, ErrorMessage = "L'âge doit être entre 0 et 120")]
+    public int Age { get; set; }
+
+    [EmailAddress(ErrorMessage = "Email invalide")]
+    public string Email { get; set; }
+}
+``` 
+
+##==##
+
+# Validation des modèles : FluentValidation
+
+- Librairie externe (NuGet) pour la validation des modèles.
+- Propose une syntaxe pour écrire des règles de validation lisibles et maintenables.
+- Séparation des règles de validation des DTOs → le code est plus propre et plus testable.
+
+``` cs
+public class UserDto
 {
-  [HttpPost]
-  public IActionResult CreateUser([FromBody] UserDto user)
-  {
-      if (!ModelState.IsValid) return BadRequest(ModelState);
-      // inutile si [ApiController] est présent
-  }   
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Email { get; set; }
 }
 
+------ 
+using FluentValidation;
+
+public class UserValidator : AbstractValidator<UserDto>
+{
+    public UserValidator()
+    {
+        RuleFor(u => u.Name)
+            .NotEmpty().WithMessage("Le nom est obligatoire")
+            .MaximumLength(50);
+
+        RuleFor(u => u.Age)
+            .InclusiveBetween(0, 120).WithMessage("L'âge doit être entre 0 et 120");
+    }
+}
 ```
 
 ##==##
@@ -84,18 +126,6 @@ public class Controller : ControllerBase
 | `Task<IActionResult>`      | Idem `IActionResult`, mais version async               | ✅                                      | Pour les appels asynchrones              |
 | `Task<ActionResult<T>>`    | Idem `ActionResult<T>`, version async                  | ✅                                      | Typage + async                            |
 
-
-##==##
-
-# PostMan
-
-Bruno est outil open-source qui permet de tester des API. 
-
-- Ouvrir Bruno
-- Créer un nouvelle collection
-- Créer une nouvelle requête GET vers http://localhost:{port}/weatherforecast/
-- Démarrer votre API
-- Tester 
 
 ##==##
 

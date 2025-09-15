@@ -88,7 +88,6 @@ Les verbes HTTP (ou méthodes HTTP) sont des actions standardisées utilisées d
 
 
 **A savoir** 
-- Exceptions non capturées = 500 Internal Server Error
-- Validation automatique du modèle ([ApiController]) : si champ manquant ou invalide, asp.net renverra un 400 (bad request)
+Exceptions non capturées = 500 Internal Server Error
 <!-- .element: class="list-fragment" -->
 
