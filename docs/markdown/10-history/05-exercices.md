@@ -9,7 +9,7 @@
 
 ##==##
 
-# donet CLI
+# dotnet CLI
 
 Les commandes les plus utilisées:
 - `dotnet new`
