@@ -5,8 +5,14 @@
 ##==##
 
 # Le C#
-1. class et record
-2. interfaces
-3. strings
-4. switch-expression et pattern-matching
-5. nouveautés / petits tricks
+
+1. Null handling
+2. Developpement asynchrone
+3. Paramètres optionnels
+4. NameOf et strings
+5. Expression body
+6. Tuples
+7. Records avec `readonly`, `init` et `required`
+8. is or not (pattern matching/ switch expresion ?)
+9. File scoped namespace et global usings
+   [10. nouveautés / petits tricks]
