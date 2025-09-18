@@ -24,6 +24,7 @@ function csharp() {
   return [
     '11-csharp/00-TITLE.md',
     '11-csharp/01-null-handling.md',
+    '11-csharp/02-async.md',
     // '11-csharp/02-interfaces.md',
     // '11-csharp/03-string-literals.md',
     // '11-csharp/04-pattern-matching.md',
