@@ -27,8 +27,3 @@ Executer les commandes suivantes (pour plus tard):
 - **`dotnet tool list --global`**
 - **`dotnet tool install dotnet-ef --global`**
 
-##==##
-
-# Contenu du template ASP.Net MVC
-
-![center](../../assets/10-history/webappmvc.png)
