@@ -1,7 +1,12 @@
+<!-- .slide: class="transition bg-blue" -->
+
+# Null Reference type
+
+##==##
+
 # [Null reference types](https://learn.microsoft.com/en-us/dotnet/csharp/nullable-references)
 
 - C'est l'ensemble des fonctions qui permettent de limiter les erreurs de type 
-<!-- .element: class="list-fragment" -->
   `System.NullReferenceException`
 - Cette erreur est généralement levée lorsqu'on "dereference" un objet (en utilisant le "**`.`**")
   ```csharp
@@ -70,6 +75,7 @@ string streetName1 = person1.Address!.Street; // Throws NullReferenceException
 
 ##==##
 
+<!-- .slide: class="exercice" -->
 # Exercice
 
 Suivre les instructions des commentaires numérotés du code.

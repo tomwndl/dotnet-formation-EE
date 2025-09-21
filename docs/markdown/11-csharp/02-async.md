@@ -1,3 +1,9 @@
+<!-- .slide: class="transition bg-blue" -->
+
+# Programmation Asynchrone
+
+##==##
+
 # [Programmation Asynchrone](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/)
 
 - Possible depuis **2012** avec la sortie du Framework 4.5
@@ -23,7 +29,6 @@ Imaginons un restaurant avec 1 table de clients, 1 serveur et 1 chef.
 <!-- .element: class="list-fragment" -->
 
 ##--##
-
 # Programmation **asynchrone**
 - Le serveur prend la commande des clients
 - Le serveur donne la commande au chef
@@ -48,6 +53,7 @@ public void CallingMethod()
 
 <br /> 
 
+<div class="fragment"> 
 2. On veut utiliser une méthode asynchrone pour que l'application ne bloque plus.
 
 ```csharp[1-5|3]
@@ -57,8 +63,8 @@ public void CallingMethod()
     //...
 }
 ```
-
 Une `Task` est une **promesse**, soit d'un retour d'un certain type, soit d'une action (comme une méthode void).
+</div>
 
 ##==##
 
@@ -79,6 +85,7 @@ public void CallingMethod()
 
 <br /> 
 
+<div class="fragment"> 
 4. Pour pouvoir utiliser `await` dans une méthode, il faut que la méthode appelante soit marquée avec `async Task`
 
 ```csharp[1-8|1]
@@ -91,6 +98,7 @@ public async Task CallingMethod()
     int length = await promiseLength;
 }
 ```
+</div>
 
 ##==##
 
@@ -174,8 +182,8 @@ public async Task WriteUserNames(CancellationToken ct)
 
 ##==## 
 
+<!-- .slide: class="exercice" -->
 # Exercice
 
 TODO: lien vers le repo ?
-
 
