@@ -1,10 +1,9 @@
-
 <!-- .slide: class="transition bg-blue" -->
 # Expression bodied members
 
 ##==##
 
-# [Expression bodies = Fonctions flechées](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)
+# [Expression bodies = Fonctions fléchées](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members)
 
 ```csharp[]
 public class Person 

@@ -6,13 +6,16 @@
 
 # Le C# 13 (.Net 9)
 
-1. Null handling
+1. Null reference types
 2. Developpement asynchrone
 3. Paramètres optionnels
-4. NameOf et strings
-5. Expression body
+4. Strings
+5. Expression bodied members = fonctions fléchées
 6. Tuples
-7. Records avec `readonly`, `init` et `required`
-8. is or not (pattern matching/ switch expresion ?)
-9. Fixed scoped namespace et global usings
-   [10. nouveautés / petits tricks]
+7. Records 
+8. Autres
+  - File scoped namespaces
+  - Global usings
+  - Collections
+  - Switch expressions
+  - Pattern-matching
