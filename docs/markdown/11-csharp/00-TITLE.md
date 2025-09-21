@@ -4,7 +4,7 @@
 
 ##==##
 
-# Le C#
+# Le C# 13 (.Net 9)
 
 1. Null handling
 2. Developpement asynchrone
@@ -14,5 +14,5 @@
 6. Tuples
 7. Records avec `readonly`, `init` et `required`
 8. is or not (pattern matching/ switch expresion ?)
-9. File scoped namespace et global usings
+9. Fixed scoped namespace et global usings
    [10. nouveautés / petits tricks]
