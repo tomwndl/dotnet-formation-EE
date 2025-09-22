@@ -6,7 +6,7 @@
 
 # .NET
 
-![center](../../assets/10-history/dotnet_components.png)
+![center](./assets/10-history/dotnet_components.png)
 
 ℹ️ [ECMA-335 - 6th edition 2012](https://ecma-international.org/wp-content/uploads/ECMA-335_6th_edition_june_2012.pdf)
 
@@ -31,7 +31,7 @@ Specification qui définit les éléments que les languages doivent respecter.
 
 ##--##
 <br><br><br><br>
-![center](../../assets/10-history/dotnet_components.png)
+![center](./assets/10-history/dotnet_components.png)
 
 ##==##
 
@@ -50,4 +50,4 @@ Specification qui définit les éléments que les languages doivent respecter.
 
 ##--##
 <br><br><br><br>
-![center](../../assets/10-history/dotnet_components.png)
+![center](./assets/10-history/dotnet_components.png)

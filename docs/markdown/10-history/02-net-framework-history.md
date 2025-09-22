@@ -27,7 +27,7 @@ Dans les **années 90**, Microsoft utilise et propose:
 
 [https://time.graphics/line/**291016**](https://time.graphics/line/291016)
 
-![Dotnet Frameworks](../../assets/10-history/timeline_dotnets.png)
+![Dotnet Frameworks](./assets/10-history/timeline_dotnets.png)
 
 ##==##
 
@@ -44,7 +44,7 @@ Dans les **années 90**, Microsoft utilise et propose:
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 
@@ -69,7 +69,7 @@ class List<T> where T : object
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 
@@ -85,7 +85,7 @@ class List<T> where T : object
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 
@@ -115,7 +115,7 @@ var query = experts.Where(e => e.City == "Strasbourg");
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 
@@ -128,7 +128,7 @@ var query = experts.Where(e => e.City == "Strasbourg");
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 
@@ -158,7 +158,7 @@ lock (this)
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 
@@ -180,7 +180,7 @@ public async Task<List<Expert>> GetExperts()
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 
@@ -193,7 +193,7 @@ public async Task<List<Expert>> GetExperts()
 ##--##
 
 <!-- .slide: class="text-dark" data-background="#2c3c4e" -->
-<img src="../../assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
+<img src="./assets/10-history/timeline_net_framework.png" alt="Timeline usage" style="margin-top:5em; height: 12em"/>
 
 ##==##
 

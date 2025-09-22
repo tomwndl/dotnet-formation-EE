@@ -5,7 +5,7 @@
 
 <!-- .slide: class="two-column" data-background="#2c3c4e"-->
 
-<img src="../../assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
+<img src="./assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
 
 ##--##
 
@@ -19,7 +19,7 @@
 
 <!-- .slide: class="two-column" data-background="#2c3c4e"-->
 
-<img src="../../assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
+<img src="./assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
 
 ##--##
 
@@ -33,7 +33,7 @@
 
 <!-- .slide: class="two-column" data-background="#2c3c4e"-->
 
-<img src="../../assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
+<img src="./assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
 
 ##--##
 
@@ -45,7 +45,7 @@
 
 <!-- .slide: class="two-column" data-background="#2c3c4e"-->
 
-<img src="../../assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
+<img src="./assets/10-history/timeline_net_core.png" alt="Timeline usage" style="margin-top:5em; height: 13em"/>
 
 ##--##
 

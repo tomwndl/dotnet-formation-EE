@@ -21,8 +21,8 @@
 
 # Présentation
 
-![speaker](../../assets/speakers/thomas-goetzmann-photo.jpg)
-![company](../../assets/images/logo-sfeir-blanc.png)
+![speaker](./assets/speakers/thomas-goetzmann-photo.jpg)
+![company](./assets/images/logo-sfeir-blanc.png)
 
 ## Thomas GOETZMANN
 

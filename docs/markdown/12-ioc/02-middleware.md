@@ -7,7 +7,7 @@
 # [Middleware](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/)
 
 Ordre des middlewares
-<img class="r-frame" src="../../assets/12-ioc/middleware-pipeline.svg" height="800">
+<img class="r-frame" src="./assets/12-ioc/middleware-pipeline.svg" height="800">
 
 ##==##
 
