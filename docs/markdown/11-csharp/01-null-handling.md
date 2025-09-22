@@ -6,9 +6,10 @@
 
 # [Null reference types](https://learn.microsoft.com/en-us/dotnet/csharp/nullable-references)
 
-- C'est l'ensemble des fonctions qui permettent de limiter les erreurs de type 
+- C'est l'ensemble des fonctions qui permettent de limiter les erreurs de type
   `System.NullReferenceException`
 - Cette erreur est généralement levée lorsqu'on "dereference" un objet (en utilisant le "**`.`**")
+
   ```csharp
   string message = "Hello world";
   int lenght = message.Length; // deferencing message
@@ -20,11 +21,13 @@
 ##==##
 
 <!-- .slide: class="with-code max-height"  -->
+
 Exemples des operateurs nullables:
+
 ```csharp[1-22|1-7|9-10|12-14|16-18|20-22|1-22]
 public class Person
 {
-    public string? Name { get; set; } 
+    public string? Name { get; set; }
     public Address? Address { get; set; }
 }
 
@@ -76,8 +79,17 @@ string streetName1 = person1.Address!.Street; // Throws NullReferenceException
 ##==##
 
 <!-- .slide: class="exercice" -->
+
 # Exercice
 
-Suivre les instructions des commentaires numérotés du code.
+[https://github.com/tomwndl/dotnet-formation-EE](https://github.com/tomwndl/dotnet-formation-EE)
 
-TODO: rajouter le lien vers le repo du code
+```bash
+# Clone
+git clone https://github.com/tomwndl/dotnet-formation-EE.git
+
+# Go to folder
+cd code-examples/NullHandlingConsole
+```
+
+Toutes les instructions sont dans les commentaires numérotés du `Program.cs`
