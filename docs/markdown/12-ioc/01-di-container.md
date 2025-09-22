@@ -139,4 +139,14 @@ var app = builder.Build();
 
 # Exercice
 
-TODO
+[https://github.com/tomwndl/dotnet-formation-EE](https://github.com/tomwndl/dotnet-formation-EE)
+
+```bash
+# Clone
+git clone https://github.com/tomwndl/dotnet-formation-EE.git
+
+# Go to folder
+cd code-examples/DependencyInjection
+```
+
+Toutes les instructions sont marquées dans le fichier `Program.cs` avec des commentaires qui commences par `//TODO-`
