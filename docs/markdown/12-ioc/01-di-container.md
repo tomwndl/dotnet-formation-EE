@@ -1,3 +1,9 @@
+<!-- .slide: class="transition bg-blue" -->
+
+# L'injection de dépendances
+
+##==##
+
 # L'injection de dépendances
 
 1. Une dépendance est lorsqu'une classe a besoin d'une autre classe.

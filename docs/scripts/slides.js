@@ -31,7 +31,7 @@ function csharp() {
 }
 
 function ioc() {
-  return ['12-ioc/00-TITLE.md', '12-ioc/01-di-container.md'];
+  return ['12-ioc/00-TITLE.md', '12-ioc/01-di-container.md', '12-ioc/02-middleware.md'];
 }
 
 function conceptionSlides() {
