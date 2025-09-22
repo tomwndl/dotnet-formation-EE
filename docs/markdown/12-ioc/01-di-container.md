@@ -113,7 +113,7 @@ Résumé:
 
 Utiliser une méthode d'extension pour regrouper les services propres à une bibliothèque
 
-```csharp
+```csharp[1-17|1-10|15|1-17]
 public static class DependencyInjection
 {
     public static IServiceCollection AddDatabaseDependencies(this IServiceCollection services)
