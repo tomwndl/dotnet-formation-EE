@@ -149,4 +149,5 @@ git clone https://github.com/tomwndl/dotnet-formation-EE.git
 cd code-examples/DependencyInjection
 ```
 
+<br />
 Toutes les instructions sont marquées dans le fichier `Program.cs` avec des commentaires qui commences par `//TODO-`

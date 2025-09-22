@@ -204,4 +204,5 @@ git clone https://github.com/tomwndl/dotnet-formation-EE.git
 cd code-examples/AsyncProgrammming
 ```
 
+<br />
 Toutes les instructions sont marquées dans le fichier `Code.cs` avec des commentaires qui commences par `//TODO-`
