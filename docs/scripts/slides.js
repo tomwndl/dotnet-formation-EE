@@ -2,11 +2,7 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 
 // One method per module
 function schoolSlides() {
-  return [
-    '00-conf/00-TITLE.md',
-    '00-conf/01-speaker.md',
-    '00-conf/02-agenda.md',
-  ];
+  return ['00-conf/00-TITLE.md', '00-conf/01-speaker.md', '00-conf/02-agenda.md'];
 }
 
 function history() {
@@ -34,6 +30,10 @@ function csharp() {
   ];
 }
 
+function ioc() {
+  return ['12-ioc/00-TITLE.md', '12-ioc/01-di-container.md'];
+}
+
 function conceptionSlides() {
   return [
     '02-conception ASP.NET/00-TITLE.md',
@@ -58,11 +58,7 @@ function apiSlides() {
 }
 
 function securiteSlides() {
-  return [
-    '04-Model/00-TITLE.md',
-    '04-Model/01-rappels.md',
-    '04-Model/02-TP.md',
-  ];
+  return ['04-Model/00-TITLE.md', '04-Model/01-rappels.md', '04-Model/02-TP.md'];
 }
 
 function formation() {
@@ -72,6 +68,7 @@ function formation() {
     ...history(), //
     ...csharp(), //
     ...conceptionSlides(), //
+    ...ioc(), //
     ...apiSlides(), //
     ...securiteSlides(), //
   ].map((slidePath) => {
