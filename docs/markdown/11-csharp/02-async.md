@@ -11,7 +11,7 @@
   tout en gardant la possibilité pour votre application de **réagir à d'autres actions**.
 - Ca évite les "Freeze" de l'application
 
-##==## 
+##==##
 
 # Example
 
@@ -20,7 +20,9 @@ Imaginons un restaurant avec 1 table de clients, 1 serveur et 1 chef.
 ##==##
 
 <!-- .slide: class="two-column" data-background="#2c3c4e"-->
+
 # Programmation **synchrone**
+
 - Le serveur prend la commande des clients
 - Le serveur donne la commande au chef
 - Le serveur attend que le chef ait fini de préparer les plats
@@ -29,7 +31,9 @@ Imaginons un restaurant avec 1 table de clients, 1 serveur et 1 chef.
 <!-- .element: class="list-fragment" -->
 
 ##--##
+
 # Programmation **asynchrone**
+
 - Le serveur prend la commande des clients
 - Le serveur donne la commande au chef
 - **Le serveur retourne en salle et s'occupe des boissons**
@@ -37,7 +41,7 @@ Imaginons un restaurant avec 1 table de clients, 1 serveur et 1 chef.
 - Le serveur va servir les plats
 <!-- .element: class="list-fragment" -->
 
-##==## 
+##==##
 
 # Synchrone vers Asynchrone
 
@@ -51,7 +55,7 @@ public void CallingMethod()
 }
 ```
 
-<br /> 
+<br />
 
 <div class="fragment"> 
 2. On veut utiliser une méthode asynchrone pour que l'application ne bloque plus.
@@ -63,7 +67,9 @@ public void CallingMethod()
     //...
 }
 ```
+
 Une `Task` est une **promesse**, soit d'un retour d'un certain type, soit d'une action (comme une méthode void).
+
 </div>
 
 ##==##
@@ -83,7 +89,7 @@ public void CallingMethod()
 }
 ```
 
-<br /> 
+<br />
 
 <div class="fragment"> 
 4. Pour pouvoir utiliser `await` dans une méthode, il faut que la méthode appelante soit marquée avec `async Task`
@@ -98,6 +104,7 @@ public async Task CallingMethod()
     int length = await promiseLength;
 }
 ```
+
 </div>
 
 ##==##
@@ -117,7 +124,7 @@ public async Task CallingMethod(CancellationToken ct)
 }
 ```
 
-<br /> 
+<br />
 
 Remarque: on évite de mettre le suffix `Async` dans le nom des méthodes
 
@@ -139,8 +146,8 @@ public async Task CallingMethod()
 public async Task<int> GetUrlContentLengthAsync()
 {
     var client = new HttpClient();
-    
-    Task<string> getStringTask = 
+
+    Task<string> getStringTask =
         client.GetStringAsync("https://docs.microsoft.com/dotnet");
 
     DoIndependantWork();
@@ -150,20 +157,21 @@ public async Task<int> GetUrlContentLengthAsync()
 }
 ```
 
-##--## 
+##--##
 
 <!-- .slide: class="two-column" data-background="#2c3c4e"-->
+
 [Microsoft Learn: What happens in an async method?](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model#BKMK_WhatHappensUnderstandinganAsyncMethod)
 
 ![Schema](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/media/task-asynchronous-programming-model/navigation-trace-async-program.png)
 
 ##==##
- 
+
 # IAsyncEnumerable
 
 ```csharp
 public async IAsyncEnumerable<string> GetUsersOneByOne([EnumeratorCancellation] CancellationToken ct)
-{ 
+{
     //...
 }
 
@@ -180,10 +188,20 @@ public async Task WriteUserNames(CancellationToken ct)
 - Nécessite une annotation au niveau du `cancellationToken` en paramètre
 - Se consomme avec une boucle `await foreach(...)`
 
-##==## 
+##==##
 
 <!-- .slide: class="exercice" -->
+
 # Exercice
 
-TODO: lien vers le repo ?
+[https://github.com/tomwndl/dotnet-formation-EE](https://github.com/tomwndl/dotnet-formation-EE)
 
+```bash
+# Clone
+git clone https://github.com/tomwndl/dotnet-formation-EE.git
+
+# Go to folder
+cd code-examples/AsyncProgrammming
+```
+
+Toutes les instructions sont marquées dans le fichier `Code.cs` avec des commentaires qui commences par `//TODO-`
