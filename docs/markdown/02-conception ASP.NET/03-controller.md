@@ -10,6 +10,7 @@
 - Centralise la gestion des requêtes HTTP
 - Expose des endpoints via des controller, gère le routing, l'authentification et les authorisations
 - Classes principals : les controllers
+<!-- .element: class="list-fragment" -->
 
 ##==##
 
@@ -39,7 +40,7 @@ public class ProductsController : Controller
 * Contient des actions / endpoint / point de terminaisons
 * Injection de dépendances
 * Chaque méthode public d’un contrôleur peut être appelée en tant que point de terminaison HTTP. 
-
+<!-- .element: class="list-fragment" -->
 
 ##==##
 
@@ -53,7 +54,7 @@ Rôle d'une action :
 - Elle reçoit les requêtes HTTP entrantes (GET, POST, PUT, DELETE, etc.).
 - Elle traite les données (ex : lecture/écriture dans une base de données, logique métier).
 - Elle renvoie une réponse au client (ex : une vue, un JSON, un statut HTTP).
-
+<!-- .element: class="list-fragment" -->
 Notes:
 - Note  
 

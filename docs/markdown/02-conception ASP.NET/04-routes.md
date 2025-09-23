@@ -5,7 +5,9 @@
 
 ##==##
 
-le routing est géré via un middleware
+# Le pipeline ASP.NET core et le middleware de routing
+
+Le routing est géré via un middleware
 
 - Mapper les URLs aux actions des contrôleurs
 - Gérer les paramètres dans les URLs

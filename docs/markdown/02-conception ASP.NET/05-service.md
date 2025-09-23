@@ -62,10 +62,11 @@ public class TaxService : ITaxService
 ##==##
 
 # La couche core / business : Bonnes pratiques
-- utiliser des interfaces : définissent les contrats, implémentées ailleurs (ex. repository)
+- Utiliser des interfaces : définissent les contrats, implémentées ailleurs (ex. repository)
 - Dependency Injection (DI) : les services métiers doivent être injectés et découplés
 - Tests : C’est la couche la plus importante à tester (tests unitaires + tests fonctionnels)
 - Doit être le plus pur possible, sans dépendance technique
 - Il doit refléter le langage du métier (nommer les classes, méthodes et propriétés avec les termes fonctionnels)
+<!-- .element: class="list-fragment" -->
 
 
