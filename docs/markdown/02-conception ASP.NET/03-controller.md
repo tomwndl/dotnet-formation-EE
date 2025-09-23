@@ -87,7 +87,7 @@ voici les 3 utilisateurs à renvoyer :
 - Guy Tar - 28
 - Anne Honyme - 45
 
-Lancer votre application. Comment appeler notre action ?
+Lancez votre application. Comment appeler notre action ?
 
 ##==##
 
