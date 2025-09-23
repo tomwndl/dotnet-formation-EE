@@ -9,4 +9,4 @@
   - `.NET Standard`
   - `.NET`
 
-![.NET Logo](../../assets/10-history/net-logo.png)<!-- .element: class="center" -->
+![.NET Logo](./assets/10-history/net-logo.png)<!-- .element: class="center" -->

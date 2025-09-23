@@ -81,3 +81,7 @@ docs/test.html
 #IDEs
 .idea/
 .vs
+
+# Ignore obj and bin folders (C#)
+**/bin/**
+**/obj/**

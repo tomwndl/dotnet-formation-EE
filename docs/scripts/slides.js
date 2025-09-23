@@ -2,11 +2,7 @@ import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-s
 
 // One method per module
 function schoolSlides() {
-  return [
-    '00-conf/00-TITLE.md',
-    '00-conf/01-speaker.md',
-    '00-conf/02-agenda.md',
-  ];
+  return ['00-conf/00-TITLE.md', '00-conf/01-speaker.md', '00-conf/02-agenda.md'];
 }
 
 function history() {
@@ -23,12 +19,19 @@ function history() {
 function csharp() {
   return [
     '11-csharp/00-TITLE.md',
-    '11-csharp/01-class-records.md',
-    '11-csharp/02-interfaces.md',
-    '11-csharp/03-string-literals.md',
-    '11-csharp/04-pattern-matching.md',
-    '11-csharp/05-new-features.md',
+    '11-csharp/01-null-handling.md',
+    '11-csharp/02-async.md',
+    '11-csharp/03-optional-params.md',
+    '11-csharp/04-string-literals.md',
+    '11-csharp/05-expression-bodied.md',
+    '11-csharp/06-tuples.md',
+    '11-csharp/07-records.md',
+    '11-csharp/08-others.md',
   ];
+}
+
+function ioc() {
+  return ['12-ioc/00-TITLE.md', '12-ioc/01-di-container.md', '12-ioc/02-middleware.md'];
 }
 
 function conceptionSlides() {
@@ -70,6 +73,7 @@ function formation() {
     ...history(), //
     ...csharp(), //
     ...conceptionSlides(), //
+    ...ioc(), //
     ...apiSlides(), //
     ...securiteSlides(), //
   ].map((slidePath) => {

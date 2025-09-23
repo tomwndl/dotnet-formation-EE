@@ -1,3 +1,79 @@
+<!-- .slide: class="transition bg-blue" -->
+# Autres
+
+##==##
+
+# File scoped namespaces
+
+
+On peut écrire:
+```csharp
+namespace MyNamespace;
+
+public class Product 
+{
+
+}
+```
+
+Au lieu de:
+
+```csharp
+namespace MyNamespace 
+{
+    public class Product 
+    {
+
+    }
+}
+```
+
+L'ensemble du fichier sera considéré comme faisant partie du namespace.
+
+##==##
+
+# Global usings
+
+Dans un fichier `.cs`
+
+```csharp
+global using System;
+global using Xunit;
+```
+
+Ou directement dans le `.csproj`
+
+```xml
+<ItemGroup>
+  <Using Include="System" />
+  <Using Include="Xunit" />
+</ItemGroup>
+```
+
+Cela permet d'éviter d'écrire ( `using System;` ) dans tous les fichiers.
+
+##==##
+
+# Les collections
+
+```csharp
+List<int> emptyNumbers = []; // empty list
+
+int[] numbers= [1,2,3,4,5,6,7,8,9];
+
+int[] numbers2 = [1,2,3];
+int[] numbers3 = [4,5];
+int[] sumNumbers = [..numbers2, ..numbers3]; // Contains: 12345
+
+int eight = numbers[^2];                     //Contains: 8
+
+int[] twoToFive = numbers[1..5];             //Contains: 2345
+int[] twoToEnd = numbers[1..];               //Contains: 23456789
+
+```
+
+##==## 
+
 # Switch-expression
 
 ```csharp
