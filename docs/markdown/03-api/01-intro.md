@@ -27,7 +27,7 @@ Notes:
 ##--##
 
 # Qu'est-ce qu'une API Web ?
-![Timeline usage](../../assets/images/api.png)
+![Timeline usage](./assets/images/api.png)
 
 ##==##
 
