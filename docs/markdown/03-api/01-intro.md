@@ -8,8 +8,6 @@
 - Bonnes pratiques pour les API Web
 - TP : Développement d'une Todo list
 
-https://tomwndl.github.io/dotnet-api/#/
-
 Notes:
 - 
 

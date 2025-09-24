@@ -11,7 +11,6 @@
 - Stateless (Sans état)
 - Cacheabilité
 - Uniformité de l'interface
-- Système en couches
 <!-- .element: class="list-fragment" -->
 
 ##==##

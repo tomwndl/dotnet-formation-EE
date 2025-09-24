@@ -198,7 +198,7 @@ Créer la class Todo dans un dossier Models :
 
 # Création d'un DTO associé pour la création
 
-Créer la class CreateTodoDto dans un dossier DTO :
+Créer la class CreateTodoDto dans un dossier DTO avec les propriétés:
 
 - Description (string)
 
