@@ -1,0 +1,30 @@
+meta {
+  name: add
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{host}}/todos/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "text": "Mon nouveau todo ajoute"
+  }
+}
+
+vars:post-response {
+  lastAddedTodo: res.body
+}
+
+assert {
+  res.body.isDone: eq false
+  res.status: eq 201
+}
+
+settings {
+  encodeUrl: true
+}

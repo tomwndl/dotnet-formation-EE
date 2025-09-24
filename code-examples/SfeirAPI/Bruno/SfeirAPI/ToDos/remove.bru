@@ -1,0 +1,31 @@
+meta {
+  name: remove
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{host}}/todos/remove/{{lastAddedTodo.id}}
+  body: none
+  auth: inherit
+}
+
+vars:post-response {
+  lastAddedTodo: 
+  ~lastAddedTodo: "Not defined"
+}
+
+tests {
+  test("status should be 200 after delete", function () {
+    expect(res.getStatus()).to.equal(200);
+  });
+  
+  test("lastAddedTodo should be emtpy", function() {
+    let last = bru.getVar("lastAddedTodo")
+    expect(last).to.be.undefined
+  })
+}
+
+settings {
+  encodeUrl: true
+}

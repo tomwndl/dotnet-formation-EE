@@ -1,0 +1,21 @@
+meta {
+  name: set-done
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{host}}/todos/set-done/{{lastAddedTodo.id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
+
+docs {
+  # This is the documentation of `/todos/set-done/{guid}`
+  
+  Please run `/todos/add` first
+}

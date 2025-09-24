@@ -1,0 +1,19 @@
+meta {
+  name: open
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{host}}/todos/open
+  body: none
+  auth: inherit
+}
+
+vars:post-response {
+  firstOpenTodo: res.body[0]
+}
+
+settings {
+  encodeUrl: true
+}

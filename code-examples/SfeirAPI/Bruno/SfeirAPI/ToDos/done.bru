@@ -1,0 +1,19 @@
+meta {
+  name: done
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/todos/done
+  body: none
+  auth: inherit
+}
+
+vars:post-response {
+  idtodo: res.body[0].id
+}
+
+settings {
+  encodeUrl: true
+}

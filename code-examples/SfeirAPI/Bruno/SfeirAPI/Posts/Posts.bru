@@ -1,0 +1,15 @@
+meta {
+  name: Posts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{host}}/posts
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
