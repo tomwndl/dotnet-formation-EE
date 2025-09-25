@@ -58,11 +58,25 @@ function apiSlides() {
 }
 
 function securiteSlides() {
+  return ['04-securite/00-TITLE.md', '04-securite/01-rappels.md', '04-securite/02-authent.md', '04-securite/03-TP.md'];
+}
+
+function utests() {
   return [
-    '04-securite/00-TITLE.md',
-    '04-securite/01-rappels.md',
-    '04-securite/02-authent.md',
-    '04-securite/03-TP.md',
+    'tests/unit-tests/00-TITLE.md',
+    'tests/unit-tests/01-definitions.md',
+    'tests/unit-tests/02-autres-tests.md',
+    'tests/unit-tests/03-pyramide.md',
+    'tests/unit-tests/04-frameworks.md',
+    'tests/unit-tests/05-mise-en-place.md',
+    'tests/unit-tests/08-test-types.md', //intentionaly in this order
+    'tests/unit-tests/06-organisations.md',
+    'tests/unit-tests/07-test-params.md',
+    'tests/unit-tests/09-test-advanced.md',
+    'tests/unit-tests/10-cas-particuliers.md',
+    'tests/unit-tests/11-philosophie.md',
+    'tests/unit-tests/12-continuous-testing.md',
+    'tests/unit-tests/13-other-tests.md',
   ];
 }
 
@@ -75,6 +89,7 @@ function formation() {
     ...conceptionSlides(), //
     ...ioc(), //
     ...apiSlides(), //
+    ...utests(), //
     ...securiteSlides(), //
   ].map((slidePath) => {
     return { path: slidePath };
